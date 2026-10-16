@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não Trava Mas Anda | Comparador de Computadores</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --dark-bg: #121212;
+            --card-bg-1: #ffffff;
+            --card-bg-2: #ffffff;
+            --card-bg-3: #1e1e24;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 80px 0 60px 0;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        .hero-slogan {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+        .team-badge {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            border-radius: 30px;
+            padding: 8px 20px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .card-custom {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-custom:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        .card-badge {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .price-tag {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        .titan-card {
+            background: #181925;
+            color: #ffffff;
+            border: 2px solid #6f42c1;
+        }
+        .titan-card .list-group-item {
+            background-color: transparent;
+            color: #d1d5db;
+            border-color: #2d2d3a;
+        }
+        .promo-banner {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .spec-icon {
+            width: 24px;
+            text-align: center;
+            margin-right: 8px;
+            color: #0d6efd;
+        }
+        .titan-card .spec-icon {
+            color: #a855f7;
+        }
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="mb-3">
+                <i class="fa-solid fa-lightbulb fa-3x text-warning"></i>
+            </div>
+            <h1 class="hero-title">Não Trava Mas Anda</h1>
+            <p class="hero-slogan">"O orçamento tu decides, a performance nós garantimos."</p>
+            
+            <div class="team-badge mt-4">
+                <small class="d-block text-uppercase fw-bold text-info mb-1">Colaboradores & Autores</small>
+                <span>Domingos Macedo (nº 13698) | David Gonçalves (nº 13695) | Diogo Ferreira (nº 13697)</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container my-5">
+        
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Escolha o Computador Ideal para Si</h2>
+            <p class="text-muted">A escolha perfeita não é a mais cara nem a mais barata — é a que responde exatamente às suas necessidades.</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- MODELO 1: BÁSICO -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-custom p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge bg-secondary card-badge">Básico / Entrada</span>
+                        <span class="price-tag text-primary">~230 €</span>
+                    </div>
+                    <h3 class="h4 fw-bold">Lenovo IdeaPad Slim 1</h3>
+                    <p class="text-muted small">Ideal para estudantes com foco em escrita, leituras e aulas online.</p>
+
+                    <ul class="list-group list-group-flush my-3">
+                        <li class="list-group-item px-0"><i class="fa-solid fa-microchip spec-icon"></i><strong>CPU:</strong> Intel Celeron N4020 (2C/2T)</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-memory spec-icon"></i><strong>RAM:</strong> 4 GB DDR4 (Soldada)</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-hard-drive spec-icon"></i><strong>Disco:</strong> 128 GB eMMC 5.1</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-display spec-icon"></i><strong>GPU:</strong> Intel UHD Graphics 600</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-laptop spec-icon"></i><strong>Ecrã:</strong> 14" HD (1366x768) TN</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-weight-hanging spec-icon"></i><strong>Peso:</strong> 1.3 kg</li>
+                    </ul>
+
+                    <div class="mt-auto">
+                        <div class="p-3 bg-light rounded mb-3">
+                            <small class="fw-bold text-dark d-block mb-1"><i class="fa-solid fa-bullseye text-success me-1"></i> Público-Alvo:</small>
+                            <small class="text-muted">Estudantes que procuram um equipamento ultra leve e económico para tarefas escolares simples (Word, PDF, Web).</small>
+                        </div>
+                        <div class="row g-2 text-center small fw-bold">
+                            <div class="col-6"><span class="badge bg-success-subtle text-success border border-success w-100 py-2">Preço Baixo</span></div>
+                            <div class="col-6"><span class="badge bg-success-subtle text-success border border-success w-100 py-2">Silencioso</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODELO 2: INTERMÉDIO -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-custom p-4 border-primary" style="border-width: 2px;">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge bg-primary card-badge">Intermédio / Equilibrado</span>
+                        <span class="price-tag text-primary">~800 €</span>
+                    </div>
+                    <h3 class="h4 fw-bold">HP 255 G10</h3>
+                    <p class="text-muted small">Equilíbrio perfeito entre rapidez, multitarefa fluida e fiabilidade.</p>
+
+                    <ul class="list-group list-group-flush my-3">
+                        <li class="list-group-item px-0"><i class="fa-solid fa-microchip spec-icon"></i><strong>CPU:</strong> AMD Ryzen 5 7530U (6C/12T)</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-memory spec-icon"></i><strong>RAM:</strong> 16 GB DDR4 3200 MHz</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-hard-drive spec-icon"></i><strong>Disco:</strong> 512 GB SSD NVMe M.2</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-display spec-icon"></i><strong>GPU:</strong> AMD Radeon Graphics</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-laptop spec-icon"></i><strong>Ecrã:</strong> 15.6" Full HD IPS</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-battery-full spec-icon"></i><strong>Autonomia:</strong> 8 a 10 horas</li>
+                    </ul>
+
+                    <div class="mt-auto">
+                        <div class="p-3 bg-light rounded mb-3">
+                            <small class="fw-bold text-dark d-block mb-1"><i class="fa-solid fa-bullseye text-primary me-1"></i> Público-Alvo:</small>
+                            <small class="text-muted">Estudantes secundários/universitários, administrativos e uso profissional (20+ abas, Teams, Excel e Photoshop leve).</small>
+                        </div>
+                        <div class="row g-2 text-center small fw-bold">
+                            <div class="col-6"><span class="badge bg-primary-subtle text-primary border border-primary w-100 py-2">SSD Rápido</span></div>
+                            <div class="col-6"><span class="badge bg-primary-subtle text-primary border border-primary w-100 py-2">16GB Multitarefa</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODELO 3: AVANÇADO -->
+            <div class="col-lg-4 col-md-12">
+                <div class="card card-custom titan-card p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge bg-warning text-dark card-badge">Topo de Gama</span>
+                        <span class="price-tag text-warning">2 499,99 €</span>
+                    </div>
+                    <h3 class="h4 fw-bold text-white">Apex Titan Workstation</h3>
+                    <p class="text-secondary small">A máquina definitiva para 4K Gaming, Modelação 3D e Engenharia.</p>
+
+                    <ul class="list-group list-group-flush my-3">
+                        <li class="list-group-item px-0"><i class="fa-solid fa-microchip spec-icon"></i><strong>CPU:</strong> Intel Core i9-14900K (24 Cores)</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-memory spec-icon"></i><strong>RAM:</strong> 32 GB DDR5 5600 MHz</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-hard-drive spec-icon"></i><strong>Disco:</strong> 2 TB SSD NVMe PCIe 4.0</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-desktop spec-icon"></i><strong>GPU:</strong> RTX 4080 Super (16GB GDDR6X)</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-fan spec-icon"></i><strong>Arrefecimento:</strong> Refrigeração Líquida AIO 360mm</li>
+                        <li class="list-group-item px-0"><i class="fa-solid fa-sliders spec-icon"></i><strong>OS:</strong> Windows 11 Pro</li>
+                    </ul>
+
+                    <div class="mt-auto">
+                        <div class="promo-banner text-center shadow-sm">
+                            <div class="fw-bold mb-1"><i class="fa-solid fa-gift me-1"></i> CAMPANHA DE LANÇAMENTO</div>
+                            <small class="d-block mb-2"><strong>20% de Desconto</strong> na compra de 2 periféricos à escolha (Monitor 4K, Teclado, Headset ou Rato)!</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1"><strong>Não Trava Mas Anda</strong> &copy; 2024-2025 | Trabalho de Avaliação</p>
+            <small>Desenvolvido em Python (Flask) para Alojamento no GitHub & Render</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
